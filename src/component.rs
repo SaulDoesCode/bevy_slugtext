@@ -50,11 +50,11 @@ impl Material for TextMaterial {
     }
 
     fn fragment_shader() -> ShaderRef {
-        "embedded://bevy_slugtext/shaders/SlugPixel.wgsl".into()
+        "embedded://bevy_slugtext/shaders/SlugPixel.wesl".into()
     }
 
     fn vertex_shader() -> ShaderRef {
-        "embedded://bevy_slugtext/shaders/SlugVertex.wgsl".into()
+        "embedded://bevy_slugtext/shaders/SlugVertex.wesl".into()
     }
 
     fn specialize(
