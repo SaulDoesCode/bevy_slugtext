@@ -13,8 +13,8 @@ pub struct SlugTextPlugin;
 
 impl Plugin for SlugTextPlugin {
     fn build(&self, app: &mut App) {
-        embedded_asset!(app, "shaders/SlugVertex.wgsl");
-        embedded_asset!(app, "shaders/SlugPixel.wgsl");
+        embedded_asset!(app, "shaders/SlugVertex.wesl");
+        embedded_asset!(app, "shaders/SlugPixel.wesl");
 
         app.add_plugins(MaterialPlugin::<TextMaterial>::default())
             .add_systems(Update, compute_mesh_and_material);
